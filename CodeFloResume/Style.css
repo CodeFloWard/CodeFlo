@@ -1,0 +1,16 @@
+.grey_text
+{
+	color: grey;
+}
+
+h1, h3, h4
+{
+	text-decoration: underline;
+}
+
+#bodyContainer
+{
+	max-width: 600px;
+	min-width: 500px;
+	margin: 0 auto;
+}
