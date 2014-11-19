@@ -3,17 +3,25 @@
 <html>
 	<head>
 		<title>Ward's Resume</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="BootStrap_Flatly.css">
 	</head>
 	<body>
-	<div id="bodyContainer">
+	<div id="bodyContainer" class="container">
 		<header>
 			<h1>Ward Lyerly</h1>
 			<h4>Software Developer Associate</h4>
 			<h5>wlyerly@gmail.com</h5>
 		</header>
-			<hr />
-			<!--<br /> \-->
+        <hr />
+        <nav>
+            <ul id="headerNav" class="nav nav-tabs well">
+                <li><a href="#summarySection">Summary Section</a></li>
+                <li><a href="#experienceSection">Experience Section</a></li>
+                <li><a href="#interestSection">Interest Section</a></li>
+                <li><a href="#projectsSection">Projects Section</a></li>
+                <li><a href="#mailForm">Contact By Email</a></li>
+            </ul>
+        </nav>
 		<section id="summarySection">
 			<h2 class="grey_text">Summary</h2>
 			<article>
@@ -43,6 +51,47 @@
 				<p>Recommendation available upon request</p>
 			</article>						
 		</section>
+        <hr />
 </div>
+        <div class="col-xs-6 ">
+            <form class="form-horizontal well" action="MAILTO:wlyerly@gmail.com?subject=Resume Inquiry" method="post" enctype="text/plain">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="select" class="col-lg-2 control-label">Reason For Contact:</label>
+                        <div class="col-lg-10">
+                            <select class="form-control" id="select">
+                                <option>Job Offer</option>
+                                <option>Resume Inquiry</option>
+                                <option>General Inquiry</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="textArea" class="col-lg-2 control-label">Name:</label>
+                        <div class="col-lg-10">
+                            <textarea class="form-control" rows="3" id="textArea"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPhone" class="col-lg-2 control-label">Phone</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="textArea" class="col-lg-2 control-label">Comments:</label>
+                        <div class="col-lg-10">
+                            <textarea class="form-control" rows="3" id="textArea"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
 	</body>
 </html>

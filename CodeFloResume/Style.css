@@ -3,14 +3,39 @@
 	color: grey;
 }
 
-h1, h3, h4
+p
+{
+	font-size: large;
+	padding: 0px;
+	margin: 5px 0px 5px 0px;
+	color: grey;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	margin: 2px;
+}
+
+h4
 {
 	text-decoration: underline;
 }
 
-#bodyContainer
+.main
 {
-	max-width: 600px;
-	min-width: 500px;
+	max-width: 700px;
 	margin: 0 auto;
+}
+
+.date
+{
+	color: black;
+}
+
+em {
+	color: black;
+}
+
+h2 {
+	margin: 8px 0 10px 0;
 }
